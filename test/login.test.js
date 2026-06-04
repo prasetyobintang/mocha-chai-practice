@@ -9,6 +9,14 @@ describe('Login API - DummyJson', () => {
     })
     // console.log(res.data)
     expect(res.status).to.equal(200)
+
+    expect(res.data.id).to.be.a('number')
+    expect(res.data.username).to.be.a('string')
+    expect(res.data.email).to.be.a('string')
+    expect(res.data.email).to.include('@')
+
+    expect(res.data.accessToken).to.be.a('string')
+    expect(res.data.accessToken).to.not.be.empty
   })
 
   it('response harus punya token', async () => {
