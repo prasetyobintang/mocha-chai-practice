@@ -98,8 +98,8 @@ describe('Login API - DummyJson', () => {
         }
       })
     } catch (err) {
-      console.log(err.response.status)
-      console.log(err.response.data)
+      // console.log(err.response.status)
+      // console.log(err.response.data)
       expect(err.response.status).to.equal(401)
     }
   })
