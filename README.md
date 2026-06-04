@@ -61,7 +61,7 @@ https://dummyjson.com
 ## Sample Result
 
 ```text
-8 passing
+11 passing
 ```
 
 ![Mocha](https://img.shields.io/badge/Test-Mocha-brown)
